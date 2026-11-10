@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "name": "Defence eProcurement System - public latest tender and corrigendum listing",
+      "url": "https://defproc.gov.in/nicgep/app",
+      "type": "nicgep_home",
+      "priority": 1,
+      "coverage": "DISCOVERY_ONLY_LATEST_LISTINGS",
+      "verification_required": true,
+      "department_confirmation_required": true,
+      "note": "Public landing-page discovery only. Full Active Tenders and Advanced Search require CAPTCHA. Worksite PIN, estimated value, and department eligibility must be verified from official tender detail documents."
+    },
+    {
+      "name": "Central Public Procurement Portal - public latest listing",
+      "url": "https://eprocure.gov.in/eprocure/app",
+      "type": "nicgep_home",
+      "priority": 2,
+      "coverage": "DISCOVERY_ONLY_LATEST_LISTINGS",
+      "verification_required": true,
+      "department_confirmation_required": true,
+      "note": "Public landing page is used only for keyword discovery. Advanced Search requires CAPTCHA. Do not qualify as MES without confirming the issuing organisation in tender detail."
+    }
+  ],
+  "manual_sources": [
+    {
+      "name": "Defence eProcurement System - Advanced Search",
+      "url": "https://defproc.gov.in/nicgep/app?page=FrontEndAdvancedSearch&service=page",
+      "type": "manual_captcha_verification",
+      "priority": 1,
+      "note": "Official interface exposes Organisation, Pincode and Value Criteria but asks the operator to enter CAPTCHA before listing results."
+    },
+    {
+      "name": "Central Public Procurement Portal - Advanced Search",
+      "url": "https://eprocure.gov.in/eprocure/app?page=FrontEndAdvancedSearch&service=page",
+      "type": "manual_captcha_verification",
+      "priority": 2,
+      "note": "Official interface exposes Organisation, Pincode and Value Criteria but asks the operator to enter CAPTCHA before listing results."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+reports/
+imports/*.csv
+imports/*.pdf
+imports/*.docx
+*.pdf
+*.docx
+*.xlsx
